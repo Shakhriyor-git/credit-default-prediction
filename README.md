@@ -6,6 +6,7 @@ End-to-end ML system for predicting credit default risk.
 **Status**: In development
 
 ## Project structure
+```bash
 credit-default-prediction/
 ├── data/
 │   ├── raw/              # Original Kaggle data (not in repo)
@@ -17,7 +18,7 @@ credit-default-prediction/
 ├── models/               # Trained models (coming soon)
 ├── requirements.txt
 └── README.md
-
+```
 ## Setup
 
 ### 1. Clone repository
