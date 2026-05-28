@@ -64,12 +64,29 @@ Then `notebooks/02_data_cleaning.ipynb`.
 - **scikit-learn, LightGBM, XGBoost** — ML models (coming soon)
 - **SHAP** — model interpretability (coming soon)
 
+
+## Results
+
+| Model | ROC-AUC | Recall | Precision | F1 |
+|-------|---------|--------|-----------|-----|
+| Logistic Regression (balanced) | 0.8541 | 73.58% | 21.13% | 32.83% |
+| LightGBM (balanced) | 0.8630 | 74.90% | 21.85% | 33.82% |
+| XGBoost (balanced) | 0.8436 | 68.22% | 22.62% | 33.97% |
+
+**Best model**: LightGBM (balanced)  
+**Cross-validation**: 5-fold ROC-AUC = 0.8625 ± 0.0017 (stable)
+
+### Key findings
+- Accuracy misleading on imbalanced data (6.6% default rate)
+- class_weight='balanced' improved Recall 16% → 75%
+- Feature engineering: income_per_dependent ranked top-4 in importance
+
 ## Progress
 
 - [x] Exploratory data analysis (EDA)
 - [x] Data cleaning pipeline
-- [ ] Feature engineering
-- [ ] Model training
+- [X] Feature engineering
+- [X] Model training
 - [ ] Model evaluation
 - [ ] API deployment (FastAPI)
 - [ ] Docker containerization
