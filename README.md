@@ -93,7 +93,7 @@ Then `notebooks/02_data_cleaning.ipynb`.
 - [x] Data cleaning pipeline
 - [X] Feature engineering
 - [X] Model training
-- [ ] Model evaluation
-- [ ] API deployment (FastAPI)
+- [x] Model evaluation
+- [x] API deployment (FastAPI)
 - [ ] Docker containerization
 - [ ] Cloud deployment
