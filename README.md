@@ -9,13 +9,19 @@ End-to-end ML system for predicting credit default risk.
 ```bash
 credit-default-prediction/
 ├── data/
-│   ├── raw/              # Original Kaggle data (not in repo)
-│   └── processed/        # Cleaned datasets (not in repo)
+│   ├── raw/                      # Original Kaggle data (not in repo)
+│   └── processed/                # Cleaned & featured datasets (not in repo)
 ├── notebooks/
 │   ├── 01_eda.ipynb              # Exploratory data analysis
-│   └── 02_data_cleaning.ipynb    # Data cleaning pipeline
-├── src/                  # Production code (coming soon)
-├── models/               # Trained models (coming soon)
+│   ├── 02_data_cleaning.ipynb    # Data cleaning pipeline
+│   ├── 03_feature_engineering.ipynb  # Feature engineering (5 new features)
+│   └── 04_modeling.ipynb         # Model training, tuning, evaluation
+├── src/
+│   └── app.py                    # FastAPI web service (/predict endpoint)
+├── models/                       # Trained models (.pkl, not in repo)
+│   ├── lgbm_model.pkl
+│   ├── scaler.pkl
+│   └── feature_names.pkl
 ├── requirements.txt
 └── README.md
 ```
