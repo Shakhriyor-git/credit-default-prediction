@@ -1,4 +1,4 @@
-````markdown
+```markdown
 # Credit Default Prediction
 
 End-to-end machine learning system for predicting credit default risk, deployed as a REST API.
@@ -165,3 +165,4 @@ Open `http://127.0.0.1:8000/docs` in your browser.
 ## 📬 Contact
 
 **Shakhriyor** — [GitHub](https://github.com/Shakhriyor-git) 
+```
